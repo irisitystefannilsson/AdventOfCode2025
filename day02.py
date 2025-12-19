@@ -46,7 +46,7 @@ def advent2_2():
             start_id, end_id = id_range.split('-')
             for id in range(int(start_id), int(end_id) + 1):
                 sum_invalid_ids += check_for_silly_id(str(id))
-    print('Sum of invalid ids(1): ', sum_invalid_ids)
+    print('Sum of invalid ids(2): ', sum_invalid_ids)
 
     
 if __name__ == '__main__':

@@ -31,7 +31,7 @@ def advent4_1():
     for roll in rolls:
         if is_accessible(roll, map):
             accessible += 1
-    print('''Nof accessible rolls:''', accessible)
+    print('''Nof accessible rolls(1):''', accessible)
     
 
 def advent4_2():
@@ -59,14 +59,14 @@ def advent4_2():
         for rroll in to_remove:
             map[rroll[0]][rroll[1]] = '.'
             rolls.remove(rroll)
-        print('''Nof accessible rolls:''', accessible)
+    print('''Nof accessible rolls(2):''', accessible)
 
 
 if __name__ == '__main__':
 
     start_time = time.time()
     print('Advent 4')
-    #advent4_1()
+    advent4_1()
     advent4_2()
     end_time_1 = time.time()
     print("time elapsed: {:.2f}s".format(end_time_1 - start_time))
