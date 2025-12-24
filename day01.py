@@ -14,7 +14,6 @@ def advent1_1():
             loc = (loc - int(rot[1:])) % 100
         elif rot[0] == 'R':
             loc = (loc + int(rot[1:])) % 100
-        #print(loc)
         if loc == 0:
             zero_count += 1
     print('Passwd(1): ', zero_count)
@@ -41,7 +40,6 @@ def advent1_2():
                 zero_count += 1
             zero_count += abs(incr - (100 - loc)) // 100
             loc = (loc + incr) % 100
-        #print(rot, loc, zero_count)
     print('Passwd(2): ', zero_count)
 
 

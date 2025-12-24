@@ -29,7 +29,7 @@ class Edge:
             self.start = (start[0], min(start[1], end[1]))
             self.end = (start[0], max(start[1], end[1]))      
 
-    def intersects(self, other):
+    def intersects(self, other : 'Edge'):
         if other.start[0] == other.end[0]:
             if self.start[0] != self.end[0]:
                 if self.start[0] < other.end[0] < self.end[0]:
